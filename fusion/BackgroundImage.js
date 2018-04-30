@@ -2,13 +2,6 @@ import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const BackgroundImage = styled('img')`
-  background-image: url('${props => props.src}');
-  background-size: ${props => props.size};
-  background-position: ${props => props.position};
-  height: auto;
-`;
-
 /* Props Check */
 BackgroundImage.propTypes = {
   /**

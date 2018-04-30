@@ -2,12 +2,7 @@ import { css } from 'emotion';
 import React from 'react';
 import { withTheme } from 'theming';
 import PropTypes from 'prop-types';
-
-const alertStyle = css`
-  background: #ccc;
-  box-shadow: 0 0 3px #aaa;
-  padding: 5px;
-`;
+import alertStyle from './style';
 
 const Alert = ({ children }) => <div className={alertStyle}> {children} </div>;
 

@@ -2,12 +2,7 @@ import { css } from 'emotion';
 import React from 'react';
 import { withTheme } from 'theming';
 import PropTypes from 'prop-types';
-
-const avatarStyle = css`
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-`;
+import avatarStyle from './style';
 
 const Avatar = ({ src, alt }) => (
   <img src={src} className={avatarStyle} alt={alt} />
