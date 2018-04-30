@@ -34,7 +34,6 @@ module.exports = {
           exclude: /node_modules/,
           include: [
             path.resolve(__dirname, 'fusion'),
-            path.resolve(__dirname, 'docs'),
             path.resolve(__dirname, 'lib', 'styleguide'),
           ],
           loader: 'babel-loader',
@@ -51,15 +50,6 @@ module.exports = {
   showCode: true,
   editorConfig: {
     lineNumbers: false,
-  },
-  styleguideDir: path.resolve(__dirname, 'docs'),
-  getExampleFilename(componentPath) {
-    return componentPath
-      .replace(
-        path.dirname(componentPath),
-        `${__dirname}/lib/styleguide/components`
-      )
-      .replace(path.extname(componentPath), '.md');
   },
   styleguideComponents: {
     Wrapper: path.join(__dirname, '/lib/styleguide/wrapper'),
